@@ -2,9 +2,9 @@
 
 ## Table of Contents
 * [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
+* [Findings](#Findings)
+* [Summary on conclusion](#Summary-on-conclusion)
+* [Contact](#Contact)
 
 <!-- You can include any other section that is pertinent to your problem -->
 
@@ -45,6 +45,6 @@ We are given a dataset that the company has collected from the sale of houses in
     + Lasso(alpha=100) and Ridge(alpha=1): for top 12 significant features as model's inputs/predictors
 - Lasso(alpha=100) and Ridge(alpha=1) models with the top 12 features significant in predicting the price of a house are: GrLivArea, PoolQC_Gd, OverallQual, Condition2_PosN, GarageCars, Neighborhood_StoneBr, Neighborhood_NoRidge, Exterior2nd_ImStucc, Neighborhood_NridgHt, LotArea, 2ndFlrSF, and	OverallCond. They are accounting for around 81% variances of predicted results vs. actual results, and around 13% of Mean Abs. Errors/Mean (or Median) of a house's price.
 
-
+## Contact
 Created by nguyenhoangthangbt@gmail.com - feel free to contact me!
 https://github.com/nguyenhoangthangbt/Houses_SalePrice_prediction
