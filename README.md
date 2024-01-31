@@ -40,10 +40,11 @@ We are given a dataset that the company has collected from the sale of houses in
 - The models of top 12 significant features resulted r2_score for test data is around 81%, decreased 0.5-0.6% comparing to r2_score of test data from the full features' models first run (Mean Absolute Error-MAE is around 23500 comparing to last MAE of 19500 ~ 2% MAE increased). Therefore, we can find the models simplied with top 12 features (fewer but significant features) can also result approximately same same prediction performance in comparing to the models with full 259 features (or reduced to 105 features by the model Lasso(alpha=100)). And, up to the business expectation, we can decide which models (simplifed or full features) to be selected for the prediction.
 
 ## Summary on conclusion
-- The top 12 features significant in predicting the price of a house are: GrLivArea, PoolQC_Gd, OverallQual, Condition2_PosN, GarageCars, Neighborhood_StoneBr, Neighborhood_NoRidge, Exterior2nd_ImStucc, Neighborhood_NridgHt, LotArea, 2ndFlrSF, and	OverallCond. They are accounting for around 81% variances of predicted results vs. actual results, and around 13% of Mean Abs. Errors/Mean (or Median) of a house's price.
-- THe optimal lamda (or alpha) for Lasso and Ridge regression as following:
+- The optimal lamda (or alpha) for Lasso and Ridge regression as following:
     + Lasso(alpha=100) and Ridge(alpha=10): for all full 259 features as model's inputs/predictors
     + Lasso(alpha=100) and Ridge(alpha=1): for top 12 significant features as model's inputs/predictors
+- Lasso(alpha=100) and Ridge(alpha=1) models with the top 12 features significant in predicting the price of a house are: GrLivArea, PoolQC_Gd, OverallQual, Condition2_PosN, GarageCars, Neighborhood_StoneBr, Neighborhood_NoRidge, Exterior2nd_ImStucc, Neighborhood_NridgHt, LotArea, 2ndFlrSF, and	OverallCond. They are accounting for around 81% variances of predicted results vs. actual results, and around 13% of Mean Abs. Errors/Mean (or Median) of a house's price.
+
 
 Created by nguyenhoangthangbt@gmail.com - feel free to contact me!
 https://github.com/nguyenhoangthangbt/Houses_SalePrice_prediction
